@@ -42,7 +42,7 @@ import { EventTracker } from './path/to/event-tracker';
 6. Copy the token that it generates
 7. You will only see this token one time, so copy it and in your .npmrc file
    replace {{YOUR_ACCESS_TOKEN}} with the new generated token
-8. In your project run `npm install @zen1/event-tracker`
+8. In your project run `npm install @aslaker/event-tracker`
 9. If the package installed properly, then you should be able to import it and
    use it within your project. See [Documentation](#documentation) below to use
    the package.
@@ -58,12 +58,13 @@ tracker and instantiate it in your code.
 
 The default threshold for the tracker is 5 minutes, but you can instantiate the
 tracker with a different value (in seconds) to modify the threshold for your
-needs.  This threshold sets a limit on the length of time from which events can be retrieved.
+needs. This threshold sets a limit on the length of time from which events can
+be retrieved.
 
 **Example:**
 
 ```js
-import { EventTracker } from '@zen1/event-tracker';
+import { EventTracker } from '@aslaker/event-tracker';
 
 const tracker = new EventTracker();
 
@@ -77,8 +78,8 @@ const tenMinuteTracker = new EventTracker(600);
 > The tracker has two available methods. One for emitting events, and another
 > for getting the current count of events.
 
-- **emit()** Calling the emit function will add a new timestamp to the
-  trackers event storage. It uses the javascript Date.now() behind the scenes to get the
+- **emit()** Calling the emit function will add a new timestamp to the trackers
+  event storage. It uses the javascript Date.now() behind the scenes to get the
   timestamp
 
 ```js
@@ -87,10 +88,11 @@ const tracker = new EventTracker();
 tracker.emit();
 ```
 
-- **getEventCount(seconds)** To get the number of emitted events over a set
-  time period (e.g. 2 minutes ago until now), you must pass a number of seconds in as an argument.
-  The function will return a count of all events that have ocurred since the specified number of seconds ago.
-  
+- **getEventCount(seconds)** To get the number of emitted events over a set time
+  period (e.g. 2 minutes ago until now), you must pass a number of seconds in as
+  an argument. The function will return a count of all events that have ocurred
+  since the specified number of seconds ago.
+
 **Example:**
 
 ```js

@@ -1,5 +1,5 @@
 {
-  "name": "@zen1/event-tracker",
+  "name": "@aslaker/event-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -21,16 +21,16 @@
   "license": "ISC",
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.1",
-    "@babel/plugin-proposal-class-properties": "^7.10.1",
-    "@babel/preset-env": "^7.10.1",
-    "@babel/preset-typescript": "^7.10.1",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
     "@types/jest": "^25.2.3",
-    "jest": "^26.0.1",
+    "jest": "^26.6.3",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.1.0",
-    "typescript": "^3.9.3"
+    "ts-jest": "^26.5.6",
+    "typescript": "^3.9.10"
   },
   "dependencies": {}
 }
